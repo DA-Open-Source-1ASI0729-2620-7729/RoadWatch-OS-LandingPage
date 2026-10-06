@@ -127,7 +127,7 @@ document.querySelectorAll(".feature-accordion-header").forEach((button) => {
 });
 
 /* We have to change the video to the about the product one */
-const ROADWATCH_YOUTUBE_URL = "https://www.youtube.com/watch?v=fO9e9jnhYK8";
+const ROADWATCH_YOUTUBE_URL = "https://youtu.be/R1lf9trcWIE";
 
 function getYouTubeId(url) {
   if (!url) return null;
