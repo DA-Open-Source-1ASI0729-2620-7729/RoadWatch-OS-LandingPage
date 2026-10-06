@@ -22,8 +22,12 @@ async function loadTranslations(lang) {
 
     // fallback to english if spanish fails.
     if (language !== defaultLanguage) {
-      const fallbackResponse = await fetch(`i18n/${defaultLanguage}.json`);
-      return await fallbackResponse.json();
+      try {
+        const fallbackResponse = await fetch(`i18n/${defaultLanguage}.json`);
+        return await fallbackResponse.json();
+      } catch (fallbackError) {
+        console.error("i18n fallback error:", fallbackError);
+      }
     }
 
     return {};
@@ -35,6 +39,15 @@ async function applyLanguage(lang) {
   const dictionary = await loadTranslations(language);
 
   document.documentElement.lang = language;
+
+  if (dictionary["meta.title"]) {
+    document.title = dictionary["meta.title"];
+  }
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription && dictionary["meta.description"]) {
+    metaDescription.setAttribute("content", dictionary["meta.description"]);
+  }
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
@@ -64,11 +77,20 @@ async function applyLanguage(lang) {
     }
   });
 
-  localStorage.setItem("roadwatch-language", language);
+  try {
+    localStorage.setItem("roadwatch-language", language);
+  } catch (error) {
+    // storage not available: the language just won't be remembered
+  }
   languageSelect.value = language;
 }
 
-const savedLanguage = localStorage.getItem("roadwatch-language") || defaultLanguage;
+let savedLanguage = defaultLanguage;
+try {
+  savedLanguage = localStorage.getItem("roadwatch-language") || defaultLanguage;
+} catch (error) {
+  // storage not available: use the default language
+}
 applyLanguage(savedLanguage);
 
 languageSelect.addEventListener("change", (event) => {
@@ -76,9 +98,22 @@ languageSelect.addEventListener("change", (event) => {
 });
 
 // mobile menu
+function closeMenu() {
+  mainNav.classList.remove("open");
+  menuToggle.setAttribute("aria-expanded", "false");
+}
+
 menuToggle.addEventListener("click", () => {
   const isOpen = mainNav.classList.toggle("open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+mainNav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", closeMenu);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMenu();
 });
 
 

@@ -18,6 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
@@ -37,6 +43,8 @@ img {
 
 /* HEADER */
 .site-header {
+  position: relative;
+  z-index: 100;
   width: 100%;
   background: #fffdfa;
   border-bottom: 1px solid var(--border);
@@ -846,8 +854,8 @@ img {
   align-items: center;
   justify-content: center;
   background:
-    linear-gradient(rgba(20, 28, 40, .30), rgba(20, 28, 40, .30)),
-    url("../assets/images/roadwatch-hero.jpg") center / cover no-repeat;
+          linear-gradient(rgba(20, 28, 40, .30), rgba(20, 28, 40, .30)),
+          url("../assets/images/roadwatch-hero.jpg") center / cover no-repeat;
 }
 
 .live-label {
@@ -1082,13 +1090,15 @@ img {
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 34px;
   align-items: stretch;
 }
 
 .team-card {
+  flex: 0 1 calc((100% - 68px) / 3);
   min-height: 370px;
   padding: 34px 28px 32px;
   display: flex;
@@ -1151,8 +1161,8 @@ img {
 }
 
 @media (max-width: 900px) {
-  .team-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .team-card {
+    flex-basis: calc((100% - 34px) / 2);
   }
 }
 
@@ -1169,11 +1179,8 @@ img {
     font-size: 16px;
   }
 
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-
   .team-card {
+    flex-basis: 100%;
     min-height: auto;
   }
 }

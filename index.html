@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
-    name="description"
-    content="RoadWatch - Automated environmental compliance and mitigation for highway construction."
+          name="description"
+          content="RoadWatch - Automated environmental compliance and mitigation for highway construction."
   >
 
   <title>RoadWatch | Environmental Compliance</title>
@@ -15,1250 +15,1232 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
   >
 
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-inner">
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
 
-      <a href="#home" class="brand" aria-label="RoadWatch home">
-        <div class="brand-logo">
-  <img src="assets/images/Logo.png" alt="RoadWatch Logo">
-</div>
-        <div class="brand-text">
-          <strong>RoadWatch</strong>
-          <span>
+    <a href="#home" class="brand" aria-label="RoadWatch home">
+      <div class="brand-logo">
+        <img src="assets/images/Logo.png" alt="RoadWatch Logo">
+      </div>
+      <div class="brand-text">
+        <strong>RoadWatch</strong>
+        <span>
             SMART ENVIRONMENTAL MONITORING FOR ROAD INFRASTRUCTURE
           </span>
-        </div>
+      </div>
+    </a>
+
+    <nav
+            class="main-nav"
+            id="mainNav"
+            aria-label="Main navigation"
+    >
+      <a href="#home" data-i18n="nav.home">
+        Home
       </a>
 
-      <nav
-        class="main-nav"
-        id="mainNav"
-        aria-label="Main navigation"
+      <a href="#solutions" data-i18n="nav.solutions">
+        Solutions
+      </a>
+
+      <a href="#benefits" data-i18n="nav.benefits">
+        Benefits
+      </a>
+
+      <a href="#features" data-i18n="nav.features">
+        Features
+      </a>
+
+      <a href="#plans" data-i18n="nav.plans">
+        SaaS Plans
+      </a>
+
+      <a href="#case-studies" data-i18n="nav.cases">
+        Case Studies
+      </a>
+    </nav>
+
+    <div class="header-actions">
+
+      <a
+              href="#contact"
+              class="signin-link"
+              data-i18n="nav.signin"
       >
-        <a href="#home" data-i18n="nav.home">
-          Home
-        </a>
+        Sign In
+      </a>
 
-        <a href="#solutions" data-i18n="nav.solutions">
-          Solutions
-        </a>
+      <a
+              href="#contact"
+              class="demo-btn"
+              data-i18n="nav.demo"
+      >
+        Request Demo
+      </a>
 
-        <a href="#benefits" data-i18n="nav.benefits">
-          Benefits
-        </a>
+      <select
+              id="languageSelect"
+              class="lang-select"
+              aria-label="Language"
+      >
+        <option value="en">
+          EN
+        </option>
 
-        <a href="#features" data-i18n="nav.features">
-          Features
-        </a>
+        <option value="es">
+          ES
+        </option>
+      </select>
 
-        <a href="#plans" data-i18n="nav.plans">
-          SaaS Plans
-        </a>
+      <button
+              class="menu-toggle"
+              id="menuToggle"
+              aria-label="Open menu"
+              aria-expanded="false"
+      >
+        ☰
+      </button>
 
-        <a href="#case-studies" data-i18n="nav.cases">
-          Case Studies
-        </a>
-      </nav>
-
-      <div class="header-actions">
-
-        <a
-          href="#signin"
-          class="signin-link"
-          data-i18n="nav.signin"
-        >
-          Sign In
-        </a>
-
-        <a
-          href="#demo"
-          class="demo-btn"
-          data-i18n="nav.demo"
-        >
-          Request Demo
-        </a>
-
-        <select
-          id="languageSelect"
-          class="lang-select"
-          aria-label="Language"
-        >
-          <option value="en">
-            EN
-          </option>
-
-          <option value="es">
-            ES
-          </option>
-        </select>
-
-        <button
-          class="menu-toggle"
-          id="menuToggle"
-          aria-label="Open menu"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
-
-      </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main>
+<main>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
 
-  <!-- Header will be added in feature/header -->
+      <div class="eyebrow">
+        <span class="dot"></span>
 
-  <main>
-    <!-- Hero -->
-<section class="hero" id="home">
-  <div class="hero-content">
-
-    <div class="eyebrow">
-      <span class="dot"></span>
-
-      <span data-i18n="hero.eyebrow">
+        <span data-i18n="hero.eyebrow">
         Environmental Compliance SaaS for Highway & Road Projects
       </span>
-    </div>
+      </div>
 
-    <h1 data-i18n="hero.title">
-      Automated Environmental Compliance & Mitigation for Highway Construction
-    </h1>
+      <h1 data-i18n="hero.title">
+        Automated Environmental Compliance & Mitigation for Highway Construction
+      </h1>
 
-    <p class="hero-description" data-i18n="hero.description">
-      Centralize, analyze, and automate environmental monitoring in real time.
-      Prevent regulatory penalties and stop-work orders through continuous IoT
-      telemetry for air, noise, water, and geo-referenced incident management
-      on site.
-    </p>
-
-    <div class="hero-actions">
-      <a
-        href="#solutions"
-        class="btn btn-primary"
-        data-i18n="hero.getStarted"
-      >
-        Get Started →
-      </a>
-
-      <a
-        href="#demo"
-        class="btn btn-secondary"
-        data-i18n="hero.watchDemo"
-      >
-        ▶ Watch Live Demo
-      </a>
-    </div>
-
-    <figure class="hero-image">
-      <img
-        src="assets/images/roadwatch-hero.jpg"
-        alt="Highway construction in a mountain landscape"
-      >
-
-      <figcaption class="hero-status">
-        <span class="status-dot"></span>
-
-        <strong data-i18n="hero.nodes">
-          142 Active IoT Nodes
-        </strong>
-
-        <span>·</span>
-
-        <span class="accent-text" data-i18n="hero.latency">
-          24ms Latency
-        </span>
-
-        <span>·</span>
-
-        <span data-i18n="hero.compliance">
-          96.2% Regulatory Compliance
-        </span>
-      </figcaption>
-    </figure>
-
-  </div>
-</section>
-    <!-- Solutions -->
-<section class="solutions-section" id="solutions">
-  <div class="solutions-container">
-
-    <div class="solutions-heading">
-      <h2 data-i18n="solutions.title">
-        Specialized Solutions for the Highway Construction Sector
-      </h2>
-
-      <div class="heading-divider" aria-hidden="true"></div>
-
-      <p data-i18n="solutions.subtitle">
-        Comprehensive ecosystem engineered for road builders,
-        concessionaires, and environmental consultants committed
-        to operational excellence.
+      <p class="hero-description" data-i18n="hero.description">
+        Centralize, analyze, and automate environmental compliance management. Prevent regulatory penalties and stop-work orders with timely alerts on air, noise, and water parameters, plus geo-referenced incident management on site.
       </p>
+
+      <div class="hero-actions">
+        <a
+                href="#solutions"
+                class="btn btn-primary"
+                data-i18n="hero.getStarted"
+        >
+          Get Started →
+        </a>
+
+        <a
+                href="#features"
+                class="btn btn-secondary"
+                data-i18n="hero.watchDemo"
+        >
+          ▶ Watch Live Demo
+        </a>
+      </div>
+
+      <figure class="hero-image">
+        <img
+                src="assets/images/roadwatch-hero.jpg"
+                alt="Highway construction in a mountain landscape"
+        >
+
+        <figcaption class="hero-status">
+          <span class="status-dot"></span>
+
+          <strong data-i18n="hero.nodes">
+            Real-Time Dashboards
+          </strong>
+
+          <span>·</span>
+
+          <span class="accent-text" data-i18n="hero.latency">
+        Automated Alerts
+      </span>
+
+          <span>·</span>
+
+          <span data-i18n="hero.compliance">
+        Audit-Ready Reports
+      </span>
+        </figcaption>
+      </figure>
+
     </div>
+  </section>
+  <!-- Solutions -->
+  <section class="solutions-section" id="solutions">
+    <div class="solutions-container">
 
-    <div class="solutions-grid">
+      <div class="solutions-heading">
+        <h2 data-i18n="solutions.title">
+          Specialized Solutions for the Highway Construction Sector
+        </h2>
 
-      <article class="solution-card">
-        <div class="solution-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="8"></circle>
-            <circle cx="9" cy="10" r="1"></circle>
-            <circle cx="15" cy="10" r="1"></circle>
-            <path d="M8 15c1.2-1 2.6-1.5 4-1.5s2.8.5 4 1.5"></path>
-          </svg>
-        </div>
+        <div class="heading-divider" aria-hidden="true"></div>
 
-        <h3 data-i18n="solutions.air.title">
-          Air Quality & Dust Control
-        </h3>
-
-        <p data-i18n="solutions.air.description">
-          Optical telemetry sensors for particulate matter PM10 / PM2.5
-          with automated alert triggering and instant misting activation
-          on haul roads.
+        <p data-i18n="solutions.subtitle">
+          Comprehensive ecosystem engineered for road builders,
+          concessionaires, and environmental consultants committed
+          to operational excellence.
         </p>
+      </div>
 
-        <div class="solution-meta">
+      <div class="solutions-grid">
+
+        <article class="solution-card">
+          <div class="solution-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="8"></circle>
+              <circle cx="9" cy="10" r="1"></circle>
+              <circle cx="15" cy="10" r="1"></circle>
+              <path d="M8 15c1.2-1 2.6-1.5 4-1.5s2.8.5 4 1.5"></path>
+            </svg>
+          </div>
+
+          <h3 data-i18n="solutions.air.title">
+            Air Quality & Dust Control
+          </h3>
+
+          <p data-i18n="solutions.air.description">
+            Tracking of particulate matter PM10 / PM2.5 with automated alerts when limits are approached and mitigation actions such as misting on haul roads.
+          </p>
+
+          <div class="solution-meta">
           <span data-i18n="solutions.air.meta1">
             ECA Air Standard
           </span>
 
-          <span class="meta-dot">•</span>
+            <span class="meta-dot">•</span>
 
-          <span class="meta-accent" data-i18n="solutions.air.meta2">
+            <span class="meta-accent" data-i18n="solutions.air.meta2">
             NIST Calibrated
           </span>
-        </div>
-      </article>
+          </div>
+        </article>
 
-      <article class="solution-card">
-        <div class="solution-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M7 9.5c0 2.8 2.2 5 5 5s5-2.2 5-5"></path>
-            <path d="M9 9.5a3 3 0 0 1 6 0c0 1.7-1.3 3-3 3s-3-1.3-3-3Z"></path>
-            <path d="M12 14.5V19"></path>
-            <path d="M9 19h6"></path>
-          </svg>
-        </div>
+        <article class="solution-card">
+          <div class="solution-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 9.5c0 2.8 2.2 5 5 5s5-2.2 5-5"></path>
+              <path d="M9 9.5a3 3 0 0 1 6 0c0 1.7-1.3 3-3 3s-3-1.3-3-3Z"></path>
+              <path d="M12 14.5V19"></path>
+              <path d="M9 19h6"></path>
+            </svg>
+          </div>
 
-        <h3 data-i18n="solutions.noise.title">
-          Acoustic Pressure & Noise Monitoring
-        </h3>
+          <h3 data-i18n="solutions.noise.title">
+            Acoustic Pressure & Noise Monitoring
+          </h3>
 
-        <p data-i18n="solutions.noise.description">
-          Continuous sound level meter telemetry in decibels (dBA)
-          across day/night shifts with geo-synchronized alerts in
-          rock drilling and blasting zones.
-        </p>
+          <p data-i18n="solutions.noise.description">
+            Noise level records in decibels (dBA) across day and night shifts, with geo-referenced alerts in rock drilling and blasting zones.
+          </p>
 
-        <div class="solution-meta">
+          <div class="solution-meta">
           <span data-i18n="solutions.noise.meta1">
             IEC 61672 Class 1 Standard
           </span>
 
-          <span class="meta-dot">•</span>
+            <span class="meta-dot">•</span>
 
-          <span class="meta-accent" data-i18n="solutions.noise.meta2">
+            <span class="meta-accent" data-i18n="solutions.noise.meta2">
             Digital dBA Log
           </span>
-        </div>
-      </article>
+          </div>
+        </article>
 
-      <article class="solution-card">
-        <div class="solution-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M6 8.5 12 5l6 3.5v7L12 19l-6-3.5v-7Z"></path>
-            <path d="M6 8.5 12 12l6-3.5"></path>
-            <path d="M12 12v7"></path>
-          </svg>
-        </div>
+        <article class="solution-card">
+          <div class="solution-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 8.5 12 5l6 3.5v7L12 19l-6-3.5v-7Z"></path>
+              <path d="M6 8.5 12 12l6-3.5"></path>
+              <path d="M12 12v7"></path>
+            </svg>
+          </div>
 
-        <h3 data-i18n="solutions.water.title">
-          Water Resources Supervision
-        </h3>
+          <h3 data-i18n="solutions.water.title">
+            Water Resources Supervision
+          </h3>
 
-        <p data-i18n="solutions.water.description">
-          Submersible multiparameter probes in stream crossings,
-          river diversions, and drainage outfalls with real-time
-          telemetry for pH, turbidity (NTU), dissolved oxygen,
-          and hydrocarbon traces.
-        </p>
+          <p data-i18n="solutions.water.description">
+            Water quality records at stream crossings, river diversions, and drainage outfalls for pH, turbidity (NTU), dissolved oxygen, and hydrocarbon traces.
+          </p>
 
-        <div class="solution-meta">
+          <div class="solution-meta">
           <span data-i18n="solutions.water.meta1">
             Clean Water Standard
           </span>
 
-          <span class="meta-dot">•</span>
+            <span class="meta-dot">•</span>
 
-          <span class="meta-accent" data-i18n="solutions.water.meta2">
+            <span class="meta-accent" data-i18n="solutions.water.meta2">
             Continuous Monitoring
           </span>
-        </div>
-      </article>
+          </div>
+        </article>
 
-      <article class="solution-card">
-        <div class="solution-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M4.5 6.5c2.5-.7 5-.2 7.5 1.5v10c-2.5-1.7-5-2.2-7.5-1.5v-10Z"></path>
-            <path d="M19.5 6.5c-2.5-.7-5-.2-7.5 1.5v10c2.5-1.7 5-2.2 7.5-1.5v-10Z"></path>
-          </svg>
-        </div>
+        <article class="solution-card">
+          <div class="solution-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M4.5 6.5c2.5-.7 5-.2 7.5 1.5v10c-2.5-1.7-5-2.2-7.5-1.5v-10Z"></path>
+              <path d="M19.5 6.5c-2.5-.7-5-.2-7.5 1.5v10c2.5-1.7 5-2.2 7.5-1.5v-10Z"></path>
+            </svg>
+          </div>
 
-        <h3 data-i18n="solutions.wildlife.title">
-          Wildlife & Sensitive Habitat Protection
-        </h3>
+          <h3 data-i18n="solutions.wildlife.title">
+            Wildlife & Sensitive Habitat Protection
+          </h3>
 
-        <p data-i18n="solutions.wildlife.description">
-          Satellite-tracked biological crossings, automated geofencing
-          of sensitive buffer zones against unauthorized clearing,
-          and traceability of rescued fauna.
-        </p>
+          <p data-i18n="solutions.wildlife.description">
+            Satellite-tracked biological crossings, automated geofencing
+            of sensitive buffer zones against unauthorized clearing,
+            and traceability of rescued fauna.
+          </p>
 
-        <div class="solution-meta">
+          <div class="solution-meta">
           <span data-i18n="solutions.wildlife.meta1">
             GIS Satellite Monitoring
           </span>
 
-          <span class="meta-dot">•</span>
+            <span class="meta-dot">•</span>
 
-          <span class="meta-accent" data-i18n="solutions.wildlife.meta2">
+            <span class="meta-accent" data-i18n="solutions.wildlife.meta2">
             Critical Habitat Alert
           </span>
-        </div>
-      </article>
+          </div>
+        </article>
 
+      </div>
     </div>
-  </div>
-</section>
-    <!-- Benefits -->
-<section class="benefits-section" id="benefits">
-  <div class="benefits-container">
+  </section>
+  <!-- Benefits -->
+  <section class="benefits-section" id="benefits">
+    <div class="benefits-container">
 
-    <div class="benefits-heading">
+      <div class="benefits-heading">
       <span class="benefits-pill" data-i18n="benefits.kicker">
         BENEFITS
       </span>
 
-      <h2 data-i18n="benefits.title">
-        The RoadWatch Advantage: From Manual Logs to Real-Time Telemetry
-      </h2>
+        <h2 data-i18n="benefits.title">
+          The RoadWatch Advantage: From Manual Logs to Automated Compliance
+        </h2>
 
-      <p data-i18n="benefits.subtitle">
-        Ensure continuous project operations by minimizing administrative
-        shutdown risks and maximizing field crew efficiency.
-      </p>
-    </div>
+        <p data-i18n="benefits.subtitle">
+          Ensure continuous project operations by minimizing administrative
+          shutdown risks and maximizing field crew efficiency.
+        </p>
+      </div>
 
-    <div class="benefits-grid">
-<!-- Benefit 1 -->
-<article class="benefit-card">
+      <div class="benefits-grid">
+        <!-- Benefit 1 -->
+        <article class="benefit-card">
 
-  <div class="benefit-feature-panel benefit-feature-panel--green">
+          <div class="benefit-feature-panel benefit-feature-panel--green">
 
-    <div class="feature-icon">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 3l7 3v5c0 4.6-2.9 8.6-7 10-4.1-1.4-7-5.4-7-10V6l7-3Z"></path>
-        <path d="m8.8 12 2.1 2.1 4.5-4.5"></path>
-      </svg>
-    </div>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3l7 3v5c0 4.6-2.9 8.6-7 10-4.1-1.4-7-5.4-7-10V6l7-3Z"></path>
+                <path d="m8.8 12 2.1 2.1 4.5-4.5"></path>
+              </svg>
+            </div>
 
-    <span
-      class="feature-kicker"
-      data-i18n="benefits.shutdowns.badge"
-    >
+            <span
+                    class="feature-kicker"
+                    data-i18n="benefits.shutdowns.badge"
+            >
       100% COMPLIANCE
     </span>
 
-    <strong>
-      Preventive Regulatory Compliance
-    </strong>
+            <strong data-i18n="benefits.shutdowns.panelTitle">
+              Preventive Regulatory Compliance
+            </strong>
 
-  </div>
-
-  <div class="benefit-content">
-
-    <h3 data-i18n="benefits.shutdowns.title">
-      Zero Shutdowns & Fines
-    </h3>
-
-    <p data-i18n="benefits.shutdowns.description">
-      Instant, preventive detection of any deviation from Maximum
-      Permissible Limits (MPL) and environmental standards,
-      triggering corrective workflows before formal audit inspections.
-    </p>
-
-    <div class="benefit-proof">
-      <span class="check-icon">✓</span>
-
-      <span data-i18n="benefits.shutdowns.proof">
-        Immediate mitigation in under 15 minutes
-      </span>
-    </div>
-
-  </div>
-</article>
-
-      <!-- Benefit 2 -->
-      <article class="benefit-card">
-
-        <div class="benefit-feature-panel benefit-feature-panel--green">
-
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 3l7 3v5c0 4.6-2.9 8.6-7 10-4.1-1.4-7-5.4-7-10V6l7-3Z"></path>
-              <path d="m9.2 12.1 1.9 1.9 4-4"></path>
-            </svg>
           </div>
 
-          <span
-            class="feature-kicker"
-            data-i18n="benefits.audits.kicker"
-          >
+          <div class="benefit-content">
+
+            <h3 data-i18n="benefits.shutdowns.title">
+              Zero Shutdowns & Fines
+            </h3>
+
+            <p data-i18n="benefits.shutdowns.description">
+              Instant, preventive detection of any deviation from Maximum
+              Permissible Limits (MPL) and environmental standards,
+              triggering corrective workflows before formal audit inspections.
+            </p>
+
+            <div class="benefit-proof">
+              <span class="check-icon">✓</span>
+
+              <span data-i18n="benefits.shutdowns.proof">
+        Immediate mitigation in under 15 minutes
+      </span>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Benefit 2 -->
+        <article class="benefit-card">
+
+          <div class="benefit-feature-panel benefit-feature-panel--green">
+
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3l7 3v5c0 4.6-2.9 8.6-7 10-4.1-1.4-7-5.4-7-10V6l7-3Z"></path>
+                <path d="m9.2 12.1 1.9 1.9 4-4"></path>
+              </svg>
+            </div>
+
+            <span
+                    class="feature-kicker"
+                    data-i18n="benefits.audits.kicker"
+            >
             SHA-256 CRYPTOGRAPHY
           </span>
 
-          <strong data-i18n="benefits.audits.panelTitle">
-            Tamper-Proof Technical Records
-          </strong>
+            <strong data-i18n="benefits.audits.panelTitle">
+              Tamper-Proof Technical Records
+            </strong>
 
-        </div>
+          </div>
 
-        <div class="benefit-content">
+          <div class="benefit-content">
 
-          <h3 data-i18n="benefits.audits.title">
-            Automated Audits
-          </h3>
+            <h3 data-i18n="benefits.audits.title">
+              Automated Audits
+            </h3>
 
-          <p data-i18n="benefits.audits.description">
-            Instant consolidation of field logs, instrument calibrations,
-            and official compliance reports ready for regulatory bodies
-            and transport authorities.
-          </p>
+            <p data-i18n="benefits.audits.description">
+              Instant consolidation of field logs, instrument calibrations,
+              and official compliance reports ready for regulatory bodies
+              and transport authorities.
+            </p>
 
-          <div class="benefit-proof">
-            <span class="check-icon">✓</span>
+            <div class="benefit-proof">
+              <span class="check-icon">✓</span>
 
-            <span data-i18n="benefits.audits.proof">
+              <span data-i18n="benefits.audits.proof">
               Save up to 85 monthly office hours
             </span>
+            </div>
+
           </div>
+        </article>
 
-        </div>
-      </article>
+        <!-- Benefit 3 -->
+        <article class="benefit-card">
 
-      <!-- Benefit 3 -->
-      <article class="benefit-card">
+          <div class="benefit-feature-panel benefit-feature-panel--navy">
 
-        <div class="benefit-feature-panel benefit-feature-panel--navy">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"></path>
+                <circle cx="12" cy="10" r="2.2"></circle>
+              </svg>
+            </div>
 
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"></path>
-              <circle cx="12" cy="10" r="2.2"></circle>
-            </svg>
-          </div>
-
-          <span
-            class="feature-kicker"
-            data-i18n="benefits.workflow.kicker"
-          >
+            <span
+                    class="feature-kicker"
+                    data-i18n="benefits.workflow.kicker"
+            >
             GPS RTK GEOREFERENCING
           </span>
 
-          <strong data-i18n="benefits.workflow.panelTitle">
-            Total Chainage Traceability
-          </strong>
+            <strong data-i18n="benefits.workflow.panelTitle">
+              Total Chainage Traceability
+            </strong>
 
-        </div>
-
-        <div class="benefit-content">
-
-          <h3 data-i18n="benefits.workflow.title">
-            Immediate Mitigation Workflow
-          </h3>
-
-          <p data-i18n="benefits.workflow.description">
-            Direct task assignment to field crews with mandatory geo-tagged
-            photo capture and digitally signed closeout reports directly
-            from the offline mobile app.
-          </p>
-
-          <div class="benefit-proof">
-            <span class="check-icon">✓</span>
-
-            <span data-i18n="benefits.workflow.proof">
-              Chain-of-custody tracking per road station (KP)
-            </span>
           </div>
 
-        </div>
-      </article>
-<!-- Benefit 4 -->
-<article class="benefit-card">
+          <div class="benefit-content">
 
-  <div class="benefit-feature-panel benefit-feature-panel--expert">
+            <h3 data-i18n="benefits.workflow.title">
+              Immediate Mitigation Workflow
+            </h3>
 
-    <div class="feature-icon">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="12" cy="8" r="4"></circle>
-        <path d="M5 20c.8-4.1 3.3-6.5 7-6.5s6.2 2.4 7 6.5"></path>
-        <path d="M18 8h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2"></path>
-      </svg>
-    </div>
+            <p data-i18n="benefits.workflow.description">
+              Direct task assignment to field crews with mandatory geo-tagged
+              photo capture and digitally signed closeout reports directly
+              from the offline mobile app.
+            </p>
 
-    <span
-      class="feature-kicker"
-      data-i18n="benefits.experts.badge"
-    >
+            <div class="benefit-proof">
+              <span class="check-icon">✓</span>
+
+              <span data-i18n="benefits.workflow.proof">
+              Chain-of-custody tracking per road station (KP)
+            </span>
+            </div>
+
+          </div>
+        </article>
+        <!-- Benefit 4 -->
+        <article class="benefit-card">
+
+          <div class="benefit-feature-panel benefit-feature-panel--expert">
+
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M5 20c.8-4.1 3.3-6.5 7-6.5s6.2 2.4 7 6.5"></path>
+                <path d="M18 8h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2"></path>
+              </svg>
+            </div>
+
+            <span
+                    class="feature-kicker"
+                    data-i18n="benefits.experts.badge"
+            >
       24/7 EXPERT BACKING
     </span>
 
-    <strong>
-      Environmental & Legal Advisory
-    </strong>
+            <strong data-i18n="benefits.experts.panelTitle">
+              Environmental & Legal Advisory
+            </strong>
 
-  </div>
+          </div>
 
-  <div class="benefit-content">
+          <div class="benefit-content">
 
-    <h3 data-i18n="benefits.experts.title">
-      Legal Peace of Mind & Expert Backing
-    </h3>
+            <h3 data-i18n="benefits.experts.title">
+              Legal Peace of Mind & Expert Backing
+            </h3>
 
-    <p data-i18n="benefits.experts.description">
-      Supported by a dedicated advisory board of environmental
-      engineers and road infrastructure specialists, offering
-      technical-legal guidance during inspections.
-    </p>
+            <p data-i18n="benefits.experts.description">
+              Supported by a dedicated advisory board of environmental
+              engineers and road infrastructure specialists, offering
+              technical-legal guidance during inspections.
+            </p>
 
-    <div class="benefit-proof">
-      <span class="check-icon">✓</span>
+            <div class="benefit-proof">
+              <span class="check-icon">✓</span>
 
-      <span data-i18n="benefits.experts.proof">
+              <span data-i18n="benefits.experts.proof">
         Audit simulation and 24/7 expert review
       </span>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
     </div>
+  </section>
+  <!-- Features -->
+  <section class="features-section" id="features">
+    <div class="features-container">
 
-  </div>
-</article>
-
-    </div>
-  </div>
-</section>
-   <!-- Features -->
-<section class="features-section" id="features">
-  <div class="features-container">
-
-    <div class="features-heading">
+      <div class="features-heading">
       <span class="features-pill" data-i18n="features.kicker">
         FEATURES
       </span>
 
-      <h2 data-i18n="features.title">
-        Advanced Management & Compliance Technology
-      </h2>
+        <h2 data-i18n="features.title">
+          Advanced Management & Compliance Technology
+        </h2>
 
-      <p data-i18n="features.subtitle">
-        Cloud-native IoT architecture purpose-built for the topographic
-        and climatic rigor of major civil engineering projects.
-      </p>
-    </div>
-
-    <div class="features-layout">
-
-      <div class="video-card">
-        <div class="video-frame">
-
-          <iframe
-            id="youtubePlayer"
-            src=""
-            title="RoadWatch YouTube video"
-            data-i18n-title="features.videoTitle"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          >
-          </iframe>
-
-          <div class="video-placeholder" id="videoPlaceholder">
-
-            <div class="live-label">
-              <span class="live-dot"></span>
-
-              <span data-i18n="features.liveLabel">
-                Live Stream: Segment 3B Pan-American Highway
-              </span>
-            </div>
-
-            <div class="play-button" aria-hidden="true">
-              ▶
-            </div>
-
-            <div class="video-footer">
-              <span data-i18n="features.connectivity">
-                Connectivity: LoRaWAN + 4G/LTE
-              </span>
-
-              <strong>
-                API RESTful v2.4 Active
-              </strong>
-            </div>
-
-          </div>
-        </div>
+        <p data-i18n="features.subtitle">
+          Cloud-native platform purpose-built for the topographic and climatic rigor of major civil engineering projects.
+        </p>
       </div>
 
-      <div class="features-accordion">
+      <div class="features-layout">
 
-        <article class="feature-accordion-item open">
-          <button
-            class="feature-accordion-header"
-            type="button"
-            aria-expanded="true"
-          >
+        <div class="video-card">
+          <div class="video-frame">
+
+            <iframe
+                    id="youtubePlayer"
+                    src=""
+                    title="RoadWatch YouTube video"
+                    data-i18n-title="features.videoTitle"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+            >
+            </iframe>
+
+            <div class="video-placeholder" id="videoPlaceholder">
+
+              <div class="live-label">
+                <span class="live-dot"></span>
+
+                <span data-i18n="features.liveLabel">
+        Product Demo: RoadWatch Platform
+      </span>
+              </div>
+
+              <div class="play-button" aria-hidden="true">
+                ▶
+              </div>
+
+              <div class="video-footer">
+              <span data-i18n="features.connectivity">
+        Cloud platform · Web and mobile access
+      </span>
+
+                <strong>
+                  API RESTful v2.4 Active
+                </strong>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="features-accordion">
+
+          <article class="feature-accordion-item open">
+            <button
+                    class="feature-accordion-header"
+                    type="button"
+                    aria-expanded="true"
+            >
             <span data-i18n="features.item1.title">
               Multi-Project GIS Georeferenced Dashboards
             </span>
 
-            <span class="accordion-chevron">
+              <span class="accordion-chevron">
               ⌃
             </span>
-          </button>
+            </button>
 
-          <div class="feature-accordion-body">
-            <p data-i18n="features.item1.description">
-              Oversee multiple road concession contracts in an interactive
-              satellite map interface (Shapefiles / GeoJSON). View active
-              work fronts and critical points in real time with automated
-              color-coded thresholds.
-            </p>
-          </div>
-        </article>
+            <div class="feature-accordion-body">
+              <p data-i18n="features.item1.description">
+                Oversee multiple road concession contracts in an interactive
+                satellite map interface (Shapefiles / GeoJSON). View active
+                work fronts and critical points in real time with automated
+                color-coded thresholds.
+              </p>
+            </div>
+          </article>
 
-        <article class="feature-accordion-item open">
-          <button
-            class="feature-accordion-header"
-            type="button"
-            aria-expanded="true"
-          >
+          <article class="feature-accordion-item open">
+            <button
+                    class="feature-accordion-header"
+                    type="button"
+                    aria-expanded="true"
+            >
             <span data-i18n="features.item2.title">
               Automated Regulatory Alert Engine (MPL / ECA)
             </span>
 
-            <span class="accordion-chevron">
+              <span class="accordion-chevron">
               ⌃
             </span>
-          </button>
+            </button>
 
-          <div class="feature-accordion-body">
-            <p data-i18n="features.item2.description">
-              Predictive algorithms evaluating hourly trends and triggering
-              instant notifications via SMS, enterprise WhatsApp, and email
-              to section supervisors whenever environmental parameters
-              reach 85% of regulatory thresholds.
-            </p>
-          </div>
-        </article>
+            <div class="feature-accordion-body">
+              <p data-i18n="features.item2.description">
+                Predictive algorithms evaluating hourly trends and triggering
+                instant notifications via SMS, enterprise WhatsApp, and email
+                to section supervisors whenever environmental parameters
+                reach 85% of regulatory thresholds.
+              </p>
+            </div>
+          </article>
 
-        <article class="feature-accordion-item open">
-          <button
-            class="feature-accordion-header"
-            type="button"
-            aria-expanded="true"
-          >
+          <article class="feature-accordion-item open">
+            <button
+                    class="feature-accordion-header"
+                    type="button"
+                    aria-expanded="true"
+            >
             <span data-i18n="features.item3.title">
               Evidence Traceability & Chain of Custody
             </span>
 
-            <span class="accordion-chevron">
+              <span class="accordion-chevron">
               ⌃
             </span>
-          </button>
+            </button>
 
-          <div class="feature-accordion-body">
-            <p data-i18n="features.item3.description">
-              Immutable vault storage with RFC 3161-compliant trusted
-              timestamping. Every telemetry reading, geo-tagged photo,
-              and laboratory certificate is anchored with forensic metadata.
-            </p>
-          </div>
-        </article>
+            <div class="feature-accordion-body">
+              <p data-i18n="features.item3.description">
+                Immutable vault storage with RFC 3161-compliant trusted timestamping. Every monitoring record, geo-tagged photo, and laboratory certificate is anchored with forensic metadata (UTM WGS84 coordinates, altitude, inspector, and cryptographic signature).
+              </p>
+            </div>
+          </article>
 
-        <article class="feature-accordion-item open">
-          <button
-            class="feature-accordion-header"
-            type="button"
-            aria-expanded="true"
-          >
+          <article class="feature-accordion-item open">
+            <button
+                    class="feature-accordion-header"
+                    type="button"
+                    aria-expanded="true"
+            >
             <span data-i18n="features.item4.title">
               Official Report Generation in PDF/A & GeoJSON
             </span>
 
-            <span class="accordion-chevron">
+              <span class="accordion-chevron">
               ⌃
             </span>
-          </button>
+            </button>
 
-          <div class="feature-accordion-body">
-            <p data-i18n="features.item4.description">
-              One-click export of monthly environmental compliance dossiers,
-              pre-formatted to match highway environmental management plans
-              and official transportation ministry terms of reference.
-            </p>
+            <div class="feature-accordion-body">
+              <p data-i18n="features.item4.description">
+                One-click export of monthly environmental compliance dossiers,
+                pre-formatted to match highway environmental management plans
+                and official transportation ministry terms of reference.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Team -->
+  <section class="team-section" id="team">
+    <div class="team-container">
+
+      <div class="team-heading">
+        <h2 data-i18n="team.title">
+          Our Team
+        </h2>
+
+        <div class="team-divider" aria-hidden="true"></div>
+
+        <p data-i18n="team.subtitle">
+          Meet the multidisciplinary team behind RoadWatch's environmental monitoring platform.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <article class="team-card">
+          <div class="team-avatar">
+            <img src="assets/images/team/Italo.1.jpeg" alt="Italo Pancorbo">
           </div>
+
+          <h3 data-i18n="team.member1.name">
+            Italo Pancorbo
+          </h3>
+
+          <span class="team-role" data-i18n="team.member1.role">
+          Software Engineer
+        </span>
+
+          <p data-i18n="team.member1.bio">
+            Software engineering student focused on web development,
+            clean architecture, and building scalable digital solutions.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar">
+            <img src="assets/images/team/Sebasthian.png" alt="Sebasthian Conde">
+          </div>
+
+          <h3 data-i18n="team.member2.name">
+            Sebasthian Conde
+          </h3>
+
+          <span class="team-role" data-i18n="team.member2.role">
+          Software Engineer
+        </span>
+
+          <p data-i18n="team.member2.bio">
+            Passionate about programming and software development, always seeking innovative and simple solutions to everyday problems through best practices.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar">
+            <img src="assets/images/team/Diaz.jpg" alt="Sebastián Díaz photo">
+          </div>
+
+          <h3 data-i18n="team.member3.name">
+            Sebastián Díaz
+          </h3>
+
+          <span class="team-role" data-i18n="team.member3.role">
+          Software Engineer
+        </span>
+
+          <p data-i18n="team.member3.bio">
+            Team-oriented engineer with experience in project organization,
+            interface design, and collaborative software development.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar">
+            <img src="assets/images/team/cabrera-camila.png" alt="Camila Cabrera photo">
+          </div>
+
+          <h3 data-i18n="team.member4.name">
+            Camila Cabrera
+          </h3>
+
+          <span class="team-role" data-i18n="team.member4.role">
+          Software Engineer
+        </span>
+
+          <p data-i18n="team.member4.bio">
+            Software engineering student passionate about mobile development,
+            usability, and modern technology solutions.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar team-avatar--placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4.5 20c.7-4.1 3.5-6.5 7.5-6.5s6.8 2.4 7.5 6.5"></path>
+            </svg>
+          </div>
+
+          <h3 data-i18n="team.member5.name">
+            Chang
+          </h3>
+
+          <span class="team-role" data-i18n="team.member5.role">
+          Software Engineer
+        </span>
+
+          <p data-i18n="team.member5.bio">
+            Collaborative software engineering student interested in innovation,
+            communication, and continuous learning.
+          </p>
         </article>
 
       </div>
     </div>
-  </div>
-</section>
-   <!-- Team -->
-<section class="team-section" id="team">
-  <div class="team-container">
+  </section>
+  <!-- Pricing -->
+  <section class="pricing-section" id="plans">
+    <div class="pricing-container">
 
-    <div class="team-heading">
-      <h2 data-i18n="team.title">
-        Our Team
-      </h2>
-
-      <div class="team-divider" aria-hidden="true"></div>
-
-      <p data-i18n="team.subtitle">
-        Meet the multidisciplinary team behind RoadWatch's environmental monitoring platform.
-      </p>
-    </div>
-
-    <div class="team-grid">
-
-      <article class="team-card">
-        <div class="team-avatar team-avatar--placeholder" aria-hidden="true">
-          <img src="assets/images/team/Italo.1.jpeg" alt="Italo Pancorbo">
-        </div>
-
-        <h3 data-i18n="team.member1.name">
-          Italo Pancorbo
-        </h3>
-
-        <span class="team-role" data-i18n="team.member1.role">
-          Software Engineer
-        </span>
-
-        <p data-i18n="team.member1.bio">
-          Software engineering student focused on web development,
-          clean architecture, and building scalable digital solutions.
-        </p>
-      </article>
-
-      <article class="team-card">
-        <div class="team-avatar team-avatar--placeholder" aria-hidden="true">
-          <img src="assets/images/team/Sebasthian.png" alt="Sebasthian Conde">
-        </div>
-
-        <h3 data-i18n="team.member2.name">
-          Sebasthian Conde
-        </h3>
-
-        <span class="team-role" data-i18n="team.member2.role">
-          Software Engineer
-        </span>
-
-        <p data-i18n="team.member2.bio">
-          Passionate about programming and software development, always seeking innovative and simple solutions to everyday problems through best practices.
-        </p>
-      </article>
-
-      <article class="team-card">
-         <div class="team-avatar team-avatar--placeholder" aria-hidden="true">
-          <img src="assets/images/team/Diaz.jpg" alt="Sebastián Díaz photo">
-        </div>
-
-        <h3 data-i18n="team.member3.name">
-          Sebastián Díaz
-        </h3>
-
-        <span class="team-role" data-i18n="team.member3.role">
-          Software Engineer
-        </span>
-
-        <p data-i18n="team.member3.bio">
-          Team-oriented engineer with experience in project organization,
-          interface design, and collaborative software development.
-        </p>
-      </article>
-
-      <article class="team-card">
-        <div class="team-avatar team-avatar--placeholder" aria-hidden="true">
-          <img src="assets/images/team/cabrera-camila.png" alt="Camila Cabrera photo">
-        </div>
-
-        <h3 data-i18n="team.member4.name">
-          Camila Cabrera
-        </h3>
-
-        <span class="team-role" data-i18n="team.member4.role">
-          Software Engineering
-        </span>
-
-        <p data-i18n="team.member4.bio">
-          Software engineering student passionate about mobile development,
-          usability, and modern technology solutions.
-        </p>
-      </article>
-
-      <article class="team-card">
-        <div class="team-avatar team-avatar--placeholder" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="8" r="4"></circle>
-            <path d="M4.5 20c.7-4.1 3.5-6.5 7.5-6.5s6.8 2.4 7.5 6.5"></path>
-          </svg>
-        </div>
-
-        <h3 data-i18n="team.member5.name">
-          Chang
-        </h3>
-
-        <span class="team-role" data-i18n="team.member5.role">
-          Software Engineering
-        </span>
-
-        <p data-i18n="team.member5.bio">
-          Collaborative software engineering student interested in innovation,
-          communication, and continuous learning.
-        </p>
-      </article>
-
-    </div>
-  </div>
-</section>
-   <!-- Pricing -->
-<section class="pricing-section" id="plans">
-  <div class="pricing-container">
-
-    <div class="pricing-heading">
+      <div class="pricing-heading">
       <span class="pricing-pill" data-i18n="pricing.kicker">
         PRICING
       </span>
 
-      <h2 data-i18n="pricing.title">
-        Flexible, Scalable Subscription Plans
-      </h2>
+        <h2 data-i18n="pricing.title">
+          Flexible, Scalable Subscription Plans
+        </h2>
 
-      <p data-i18n="pricing.subtitle">
-        Select the SaaS tier tailored to your highway consortium
-        or environmental consultancy.
-      </p>
-    </div>
+        <p data-i18n="pricing.subtitle">
+          Select the SaaS tier tailored to your highway consortium
+          or environmental consultancy.
+        </p>
+      </div>
 
-    <div class="billing-toggle">
-      <button
-        class="billing-btn active"
-        type="button"
-        data-billing="monthly"
-        data-i18n="pricing.monthly"
-      >
-        Monthly Billing
-      </button>
+      <div class="billing-toggle">
+        <button
+                class="billing-btn active"
+                type="button"
+                data-billing="monthly"
+                data-i18n="pricing.monthly"
+        >
+          Monthly Billing
+        </button>
 
-      <button
-        class="billing-btn"
-        type="button"
-        data-billing="annual"
-      >
+        <button
+                class="billing-btn"
+                type="button"
+                data-billing="annual"
+        >
         <span data-i18n="pricing.annual">
           Annual
         </span>
 
-        <span class="billing-free" data-i18n="pricing.free">
+          <span class="billing-free" data-i18n="pricing.free">
           2 months free
         </span>
-      </button>
-    </div>
+        </button>
+      </div>
 
-    <div class="pricing-grid">
+      <div class="pricing-grid">
 
-      <!-- Base Plan -->
-      <article class="pricing-card">
+        <!-- Base Plan -->
+        <article class="pricing-card">
 
         <span class="plan-audience" data-i18n="pricing.base.audience">
           FOR SMALL ROAD CONTRACTORS
         </span>
 
-        <h3 data-i18n="pricing.base.name">
-          Base Plan
-        </h3>
+          <h3 data-i18n="pricing.base.name">
+            Base Plan
+          </h3>
 
-        <p class="plan-description" data-i18n="pricing.base.description">
-          Ideal for routine maintenance projects or short highway
-          stretches requiring standard monitoring.
-        </p>
+          <p class="plan-description" data-i18n="pricing.base.description">
+            Ideal for routine maintenance projects or short highway
+            stretches requiring standard monitoring.
+          </p>
 
-        <div class="plan-price">
-          <span class="currency">$</span>
+          <div class="plan-price">
+            <span class="currency">$</span>
 
-          <span
-            class="price-value"
-            data-monthly="490"
-            data-annual="408"
-          >
+            <span
+                    class="price-value"
+                    data-monthly="490"
+                    data-annual="408"
+            >
             490
           </span>
 
-          <span class="price-period" data-i18n="pricing.perMonth">
+            <span class="price-period" data-i18n="pricing.perMonth">
             / mo
           </span>
-        </div>
+          </div>
 
-        <a
-          href="#contact"
-          class="plan-btn plan-btn--light"
-          data-i18n="pricing.base.cta"
-        >
-          Select Base Plan
-        </a>
+          <a
+                  href="#contact"
+                  class="plan-btn plan-btn--light"
+                  data-i18n="pricing.base.cta"
+          >
+            Select Base Plan
+          </a>
 
-        <div class="plan-divider"></div>
+          <div class="plan-divider"></div>
 
-        <span class="features-label" data-i18n="pricing.included">
+          <span class="features-label" data-i18n="pricing.included">
           INCLUDED FEATURES:
         </span>
 
-        <ul class="plan-features">
-          <li data-i18n="pricing.base.f1">
-            Up to 3 active road projects simultaneously
-          </li>
+          <ul class="plan-features">
+            <li data-i18n="pricing.base.f1">
+              Up to 3 active road projects simultaneously
+            </li>
 
-          <li data-i18n="pricing.base.f2">
-            Standard georeferenced dashboards
-          </li>
+            <li data-i18n="pricing.base.f2">
+              Standard georeferenced dashboards
+            </li>
 
-          <li data-i18n="pricing.base.f3">
-            PM10 and Noise (dBA) logging
-          </li>
+            <li data-i18n="pricing.base.f3">
+              PM10 and Noise (dBA) logging
+            </li>
 
-          <li data-i18n="pricing.base.f4">
-            Automated email alerts
-          </li>
+            <li data-i18n="pricing.base.f4">
+              Automated email alerts
+            </li>
 
-          <li data-i18n="pricing.base.f5">
-            Standard business hours support (48h SLA)
-          </li>
-        </ul>
+            <li data-i18n="pricing.base.f5">
+              Standard business hours support (48h SLA)
+            </li>
+          </ul>
 
-      </article>
+        </article>
 
-      <!-- Professional Plan -->
-      <article class="pricing-card pricing-card--featured">
+        <!-- Professional Plan -->
+        <article class="pricing-card pricing-card--featured">
 
         <span class="popular-badge" data-i18n="pricing.popular">
           MOST POPULAR
         </span>
 
-        <span class="plan-audience" data-i18n="pricing.pro.audience">
+          <span class="plan-audience" data-i18n="pricing.pro.audience">
           FOR ENVIRONMENTAL CONSULTANTS & CONCESSIONAIRES
         </span>
 
-        <h3 data-i18n="pricing.pro.name">
-          Professional Plan
-        </h3>
+          <h3 data-i18n="pricing.pro.name">
+            Professional Plan
+          </h3>
 
-        <p class="plan-description" data-i18n="pricing.pro.description">
-          For highway supervision and concessionaire firms demanding
-          full scalability and multi-user management.
-        </p>
+          <p class="plan-description" data-i18n="pricing.pro.description">
+            For highway supervision and concessionaire firms demanding
+            full scalability and multi-user management.
+          </p>
 
-        <div class="plan-price">
-          <span class="currency">$</span>
+          <div class="plan-price">
+            <span class="currency">$</span>
 
-          <span
-            class="price-value"
-            data-monthly="1290"
-            data-annual="1075"
-          >
+            <span
+                    class="price-value"
+                    data-monthly="1290"
+                    data-annual="1075"
+            >
             1,290
           </span>
 
-          <span class="price-period" data-i18n="pricing.perMonth">
+            <span class="price-period" data-i18n="pricing.perMonth">
             / mo
           </span>
-        </div>
+          </div>
 
-        <a
-          href="#contact"
-          class="plan-btn plan-btn--featured"
-          data-i18n="pricing.pro.cta"
-        >
-          Get Professional Plan
-        </a>
+          <a
+                  href="#contact"
+                  class="plan-btn plan-btn--featured"
+                  data-i18n="pricing.pro.cta"
+          >
+            Get Professional Plan
+          </a>
 
-        <div class="plan-divider plan-divider--dark"></div>
+          <div class="plan-divider plan-divider--dark"></div>
 
-        <span class="features-label" data-i18n="pricing.basePlus">
+          <span class="features-label" data-i18n="pricing.basePlus">
           EVERYTHING IN BASE PLUS:
         </span>
 
-        <ul class="plan-features">
-          <li data-i18n="pricing.pro.f1">
-            Unlimited road projects on platform
-          </li>
+          <ul class="plan-features">
+            <li data-i18n="pricing.pro.f1">
+              Unlimited road projects on platform
+            </li>
 
-          <li data-i18n="pricing.pro.f2">
-            Complete water telemetry (pH, NTU, TPH)
-          </li>
+            <li data-i18n="pricing.pro.f2">
+              Complete water quality monitoring (pH, NTU, TPH)
+            </li>
 
-          <li data-i18n="pricing.pro.f3">
-            Field mitigation workflow with offline mobile app
-          </li>
+            <li data-i18n="pricing.pro.f3">
+              Field mitigation workflow with offline mobile app
+            </li>
 
-          <li data-i18n="pricing.pro.f4">
-            Instant WhatsApp alerts to field crews
-          </li>
+            <li data-i18n="pricing.pro.f4">
+              Instant WhatsApp alerts to field crews
+            </li>
 
-          <li data-i18n="pricing.pro.f5">
-            PDF/A reports with cryptographic digital signature
-          </li>
-        </ul>
+            <li data-i18n="pricing.pro.f5">
+              PDF/A reports with cryptographic digital signature
+            </li>
+          </ul>
 
-      </article>
+        </article>
 
-      <!-- Enterprise Plan -->
-      <article class="pricing-card">
+        <!-- Enterprise Plan -->
+        <article class="pricing-card">
 
         <span class="plan-audience" data-i18n="pricing.enterprise.audience">
           FOR MAJOR HIGHWAY CONSORTIUMS
         </span>
 
-        <h3 data-i18n="pricing.enterprise.name">
-          Enterprise Plan
-        </h3>
+          <h3 data-i18n="pricing.enterprise.name">
+            Enterprise Plan
+          </h3>
 
-        <p class="plan-description" data-i18n="pricing.enterprise.description">
-          For national-scale infrastructure consortia with custom
-          integration, white-label, and dedicated audit requirements.
-        </p>
+          <p class="plan-description" data-i18n="pricing.enterprise.description">
+            For national-scale infrastructure consortia with custom
+            integration, white-label, and dedicated audit requirements.
+          </p>
 
-        <div class="plan-price">
-          <span class="currency">$</span>
+          <div class="plan-price">
+            <span class="currency">$</span>
 
-          <span
-            class="price-value"
-            data-monthly="2850"
-            data-annual="2375"
-          >
+            <span
+                    class="price-value"
+                    data-monthly="2850"
+                    data-annual="2375"
+            >
             2,850
           </span>
 
-          <span class="price-period" data-i18n="pricing.perMonth">
+            <span class="price-period" data-i18n="pricing.perMonth">
             / mo
           </span>
-        </div>
+          </div>
 
-        <a
-          href="#contact"
-          class="plan-btn plan-btn--dark"
-          data-i18n="pricing.enterprise.cta"
-        >
-          Contact Sales
-        </a>
+          <a
+                  href="#contact"
+                  class="plan-btn plan-btn--dark"
+                  data-i18n="pricing.enterprise.cta"
+          >
+            Contact Sales
+          </a>
 
-        <div class="plan-divider"></div>
+          <div class="plan-divider"></div>
 
-        <span class="features-label" data-i18n="pricing.proPlus">
+          <span class="features-label" data-i18n="pricing.proPlus">
           EVERYTHING IN PROFESSIONAL PLUS:
         </span>
 
-        <ul class="plan-features">
-          <li data-i18n="pricing.enterprise.f1">
-            Full RESTful API, SCADA & ArcGIS integration
-          </li>
+          <ul class="plan-features">
+            <li data-i18n="pricing.enterprise.f1">
+              Full RESTful API and ArcGIS integration
+            </li>
 
-          <li data-i18n="pricing.enterprise.f2">
-            Custom institutional white-label deployment
-          </li>
+            <li data-i18n="pricing.enterprise.f2">
+              Custom institutional white-label deployment
+            </li>
 
-          <li data-i18n="pricing.enterprise.f3">
-            Priority 24/7 technical and legal support
-          </li>
+            <li data-i18n="pricing.enterprise.f3">
+              Priority 24/7 technical and legal support
+            </li>
 
-          <li data-i18n="pricing.enterprise.f4">
-            Unlimited telemetry projects and nodes
-          </li>
+            <li data-i18n="pricing.enterprise.f4">
+              Unlimited monitoring projects
+            </li>
 
-          <li data-i18n="pricing.enterprise.f5">
-            On-site expert support during environmental audits
-          </li>
-        </ul>
+            <li data-i18n="pricing.enterprise.f5">
+              On-site expert support during environmental audits
+            </li>
+          </ul>
 
-      </article>
-
-    </div>
-  </div>
-</section>
-   <!-- Testimonials -->
-<section class="testimonials-section" id="case-studies">
-  <div class="testimonials-container">
-
-    <div class="testimonials-heading">
-      <h2 data-i18n="testimonials.title">
-        What Infrastructure Leaders Say About Us
-      </h2>
-
-      <div class="testimonials-divider" aria-hidden="true"></div>
-
-      <p data-i18n="testimonials.subtitle">
-        Proven success across national highways, logistics corridors,
-        and complex civil works.
-      </p>
-    </div>
-
-    <div class="testimonials-grid">
-
-      <!-- Testimonial 1 -->
-      <article class="testimonial-card">
-        <div class="testimonial-stars" aria-label="5 stars">
-          ★★★★★
-        </div>
-
-        <blockquote data-i18n="testimonials.card1.quote">
-          “RoadWatch reduced our report preparation time for environmental
-          authorities by 80%. Our data is always clean and audit-ready.”
-        </blockquote>
-
-        <div class="testimonial-separator"></div>
-
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">
-            RM
-          </div>
-
-          <div>
-            <strong data-i18n="testimonials.card1.name">
-              Eng. Roberto Morales
-            </strong>
-
-            <span data-i18n="testimonials.card1.role">
-              Environmental Director · Andes Road Consortium
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Testimonial 2 -->
-      <article class="testimonial-card">
-        <div class="testimonial-stars" aria-label="5 stars">
-          ★★★★★
-        </div>
-
-        <blockquote data-i18n="testimonials.card2.quote">
-          “The automated alert engine allowed us to mitigate a critical
-          noise spike in less than 20 minutes, avoiding a formal
-          stop-work order.”
-        </blockquote>
-
-        <div class="testimonial-separator"></div>
-
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">
-            MS
-          </div>
-
-          <div>
-            <strong data-i18n="testimonials.card2.name">
-              Dra. Mariana Silva
-            </strong>
-
-            <span data-i18n="testimonials.card2.role">
-              Senior Environmental Consultant · InfraTech
-            </span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Testimonial 3 -->
-      <article class="testimonial-card">
-        <div class="testimonial-stars" aria-label="5 stars">
-          ★★★★★
-        </div>
-
-        <blockquote data-i18n="testimonials.card3.quote">
-          “Real-time integration with turbidity sensors and cryptographic
-          timestamping gives our legal team bulletproof confidence.”
-        </blockquote>
-
-        <div class="testimonial-separator"></div>
-
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">
-            CD
-          </div>
-
-          <div>
-            <strong data-i18n="testimonials.card3.name">
-              Arch. Carlos Duarte
-            </strong>
-
-            <span data-i18n="testimonials.card3.role">
-              Highway Construction Supervisor · O&amp;M Concessions
-            </span>
-          </div>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- CTA -->
-    <div class="final-cta" id="contact">
-
-      <h3 data-i18n="cta.title">
-        Transform the Sustainability & Environmental Compliance
-        of Your Road Infrastructure.
-      </h3>
-
-      <p data-i18n="cta.description">
-        Request a personalized 20-minute session with our road telemetry
-        engineers and discover how to eliminate non-compliance risks.
-      </p>
-
-      <div class="final-cta-actions">
-
-        <a
-          href="mailto:contact@roadwatch.com"
-          class="final-cta-btn final-cta-btn--primary"
-          data-i18n="cta.primary"
-        >
-          Request Guided Demo
-        </a>
-
-        <a
-          href="mailto:contact@roadwatch.com"
-          class="final-cta-btn final-cta-btn--secondary"
-          data-i18n="cta.secondary"
-        >
-          Speak with a Specialist
-        </a>
+        </article>
 
       </div>
     </div>
+  </section>
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="case-studies">
+    <div class="testimonials-container">
 
-  </div>
-</section>
+      <div class="testimonials-heading">
+        <h2 data-i18n="testimonials.title">
+          What Infrastructure Leaders Say About Us
+        </h2>
 
-  </main>
+        <div class="testimonials-divider" aria-hidden="true"></div>
 
- <!-- Footer -->
+        <p data-i18n="testimonials.subtitle">
+          Proven success across national highways, logistics corridors,
+          and complex civil works.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <!-- Testimonial 1 -->
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 stars">
+            ★★★★★
+          </div>
+
+          <blockquote data-i18n="testimonials.card1.quote">
+            “RoadWatch reduced our report preparation time for environmental
+            authorities by 80%. Our data is always clean and audit-ready.”
+          </blockquote>
+
+          <div class="testimonial-separator"></div>
+
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              RM
+            </div>
+
+            <div>
+              <strong data-i18n="testimonials.card1.name">
+                Eng. Roberto Morales
+              </strong>
+
+              <span data-i18n="testimonials.card1.role">
+              Environmental Director · Andes Road Consortium
+            </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonial 2 -->
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 stars">
+            ★★★★★
+          </div>
+
+          <blockquote data-i18n="testimonials.card2.quote">
+            “The automated alert engine allowed us to mitigate a critical
+            noise spike in less than 20 minutes, avoiding a formal
+            stop-work order.”
+          </blockquote>
+
+          <div class="testimonial-separator"></div>
+
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              MS
+            </div>
+
+            <div>
+              <strong data-i18n="testimonials.card2.name">
+                Dr. Mariana Silva
+              </strong>
+
+              <span data-i18n="testimonials.card2.role">
+              Senior Environmental Consultant · InfraTech
+            </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonial 3 -->
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 stars">
+            ★★★★★
+          </div>
+
+          <blockquote data-i18n="testimonials.card3.quote">
+            “Turbidity records with cryptographic timestamping give our legal team bulletproof confidence.”
+          </blockquote>
+
+          <div class="testimonial-separator"></div>
+
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              CD
+            </div>
+
+            <div>
+              <strong data-i18n="testimonials.card3.name">
+                Arch. Carlos Duarte
+              </strong>
+
+              <span data-i18n="testimonials.card3.role">
+              Highway Construction Supervisor · O&amp;M Concessions
+            </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- CTA -->
+      <div class="final-cta" id="contact">
+
+        <h3 data-i18n="cta.title">
+          Transform the Sustainability & Environmental Compliance
+          of Your Road Infrastructure.
+        </h3>
+
+        <p data-i18n="cta.description">
+          Request a personalized 20-minute session with our road environmental specialists and discover how to eliminate non-compliance risks.
+        </p>
+
+        <div class="final-cta-actions">
+
+          <a
+                  href="mailto:contact@roadwatch.com"
+                  class="final-cta-btn final-cta-btn--primary"
+                  data-i18n="cta.primary"
+          >
+            Request Guided Demo
+          </a>
+
+          <a
+                  href="mailto:contact@roadwatch.com"
+                  class="final-cta-btn final-cta-btn--secondary"
+                  data-i18n="cta.secondary"
+          >
+            Speak with a Specialist
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
 <footer class="site-footer">
   <div class="footer-container">
 
@@ -1267,8 +1249,8 @@
       <div class="footer-brand">
         <div class="footer-brand-row">
           <div class="brand-logo">
-  <img src="assets/images/Logo.png" alt="RoadWatch Logo">
-</div>
+            <img src="assets/images/Logo.png" alt="RoadWatch Logo">
+          </div>
 
           <div class="footer-brand-name">
             Road<span>Watch</span>
@@ -1276,8 +1258,7 @@
         </div>
 
         <p data-i18n="footer.description">
-          RoadWatch is a SaaS platform specialized in environmental
-          compliance and telemetry mitigation for highways and road concessions.
+          RoadWatch is a SaaS platform specialized in environmental compliance and mitigation for highways and road concessions.
         </p>
 
         <em data-i18n="footer.tagline">
@@ -1291,7 +1272,7 @@
         </h4>
 
         <a href="#solutions" data-i18n="footer.modules.air">
-          Air Telemetry (PM10/PM2.5)
+          Air Quality (PM10/PM2.5)
         </a>
 
         <a href="#solutions" data-i18n="footer.modules.noise">
@@ -1339,8 +1320,8 @@
         </p>
 
         <a
-          href="mailto:support@roadwatch.com"
-          class="footer-email"
+                href="mailto:support@roadwatch.com"
+                class="footer-email"
         >
           support@roadwatch.com
         </a>
@@ -1369,22 +1350,22 @@
       <div class="footer-legal">
 
         <a
-          href="./legal/privacy-policy.html"
-          data-i18n="footer.privacy"
+                href="./legal/privacy-policy.html"
+                data-i18n="footer.privacy"
         >
           Privacy Policy
         </a>
 
         <a
-          href="./legal/terms-of-service.html"
-          data-i18n="footer.terms"
+                href="./legal/terms-of-service.html"
+                data-i18n="footer.terms"
         >
           Terms of Service
         </a>
 
         <a
-          href="./legal/data-security.html"
-          data-i18n="footer.security"
+                href="./legal/data-security.html"
+                data-i18n="footer.security"
         >
           Data Security
         </a>
@@ -1396,6 +1377,6 @@
   </div>
 </footer>
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
