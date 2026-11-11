@@ -4,7 +4,7 @@ const mainNav = document.getElementById("mainNav");
 
 // Languages
 const supportedLanguages = ["en", "es"];
-const defaultLanguage = "en";
+const defaultLanguage = "es";
 
 async function loadTranslations(lang) {
   const language = supportedLanguages.includes(lang) ? lang : defaultLanguage;
@@ -20,7 +20,6 @@ async function loadTranslations(lang) {
   } catch (error) {
     console.error("i18n error:", error);
 
-    // fallback to english if spanish fails.
     if (language !== defaultLanguage) {
       try {
         const fallbackResponse = await fetch(`i18n/${defaultLanguage}.json`);
@@ -79,18 +78,14 @@ async function applyLanguage(lang) {
 
   try {
     localStorage.setItem("roadwatch-language", language);
-  } catch (error) {
-    // storage not available: the language just won't be remembered
-  }
+  } catch (error) {}
   languageSelect.value = language;
 }
 
 let savedLanguage = defaultLanguage;
 try {
   savedLanguage = localStorage.getItem("roadwatch-language") || defaultLanguage;
-} catch (error) {
-  // storage not available: use the default language
-}
+} catch (error) {}
 applyLanguage(savedLanguage);
 
 languageSelect.addEventListener("change", (event) => {
@@ -126,7 +121,6 @@ document.querySelectorAll(".feature-accordion-header").forEach((button) => {
   });
 });
 
-/* We have to change the video to the about the product one */
 const ROADWATCH_YOUTUBE_URL = "https://youtu.be/R1lf9trcWIE";
 
 function getYouTubeId(url) {
@@ -153,7 +147,6 @@ const videoFrame = document.querySelector(".video-frame");
 function loadConfiguredYouTubeVideo() {
   const videoId = getYouTubeId(ROADWATCH_YOUTUBE_URL);
 
-  // to keep preview if no video is set
   if (!videoId || videoId === "YOUR_VIDEO_ID") return;
 
   youtubePlayer.src = `https://www.youtube.com/embed/${videoId}?rel=0`;
@@ -161,26 +154,3 @@ function loadConfiguredYouTubeVideo() {
 }
 
 loadConfiguredYouTubeVideo();
-
-
-// pricing toggle
-const billingButtons = document.querySelectorAll(".billing-btn");
-const priceValues = document.querySelectorAll(".price-value");
-
-function formatPrice(value) {
-  return Number(value).toLocaleString("en-US");
-}
-
-billingButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    billingButtons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
-
-    const billing = button.dataset.billing;
-
-    priceValues.forEach((price) => {
-      const value = price.dataset[billing];
-      if (value) price.textContent = formatPrice(value);
-    });
-  });
-});

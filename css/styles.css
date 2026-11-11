@@ -1,10 +1,10 @@
 :root {
-  --green: #2E9E7A;
-  --dark-green: #1F5638;
-  --navy: #264653;
-  --cream: #F5F1E8;
-  --gold: #E9B44C;
-  --red: #C0392B;
+  --green: #23A277;
+  --dark-green: #1E3844;
+  --navy: #1E3844;
+  --cream: #F6F5EE;
+  --gold: #E5A93C;
+  --red: #D64545;
   --white: #FFFFFF;
   --text: #1E2B35;
   --muted: #56616B;
@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Rubik", Arial, sans-serif;
   color: var(--text);
   background: #fffdfa;
 }
@@ -1234,6 +1234,13 @@ img {
   line-height: 1.5;
 }
 
+.pricing-note {
+  max-width: 740px;
+  margin: 12px auto 0;
+  color: #66717d;
+  font-size: 14px;
+}
+
 .billing-toggle {
   width: fit-content;
   margin: 0 auto 48px;
@@ -1356,6 +1363,18 @@ img {
   align-items: flex-end;
   gap: 4px;
   color: #111827;
+}
+
+.plan-price--reference {
+  min-height: 54px;
+  align-items: center;
+  color: var(--dark-green);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.pricing-card--featured .plan-price--reference {
+  color: white;
 }
 
 .pricing-card--featured .plan-price {
@@ -1552,7 +1571,7 @@ img {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
 }
 
