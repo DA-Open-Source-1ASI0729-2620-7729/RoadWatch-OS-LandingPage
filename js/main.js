@@ -121,7 +121,6 @@ document.querySelectorAll(".feature-accordion-header").forEach((button) => {
   });
 });
 
-const ROADWATCH_YOUTUBE_URL = "https://youtu.be/R1lf9trcWIE";
 
 function getYouTubeId(url) {
   if (!url) return null;
