@@ -2063,3 +2063,7 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+.features-layout {
+  grid-template-columns: 1fr;
+}
