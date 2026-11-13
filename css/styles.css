@@ -2041,3 +2041,25 @@ img {
     font-size: 40px;
   }
 }
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.videos-grid .video-frame {
+  border-width: 6px;
+}
+
+.videos-grid h3 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 700px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
